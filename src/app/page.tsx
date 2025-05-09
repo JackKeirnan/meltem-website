@@ -6,8 +6,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Temp</title>
-        <meta name="description" content="Temp" />
+        <title>Atelier Lavender</title>
+        <meta name="Atelier Lavender" content="We are Atelier Lavender" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -22,9 +22,9 @@ export default function Home() {
           />
 
             <img
-              src="/Images/atelier.jpg" // replace with your image path
+              src="/Images/atelier.png" // replace with your image path
               alt="Atelier Logo"
-              className="absolute top-4 left-4 w-16 h-16 object-contain z-10"
+              className="absolute top-1 left-1 w-24 h-24 object-contain z-10"
             />
             
             <header className="absolute inset-0 flex justify-center items-center text-white text-xl text-center px-4">
@@ -35,6 +35,7 @@ export default function Home() {
             </header>
         </section>
 
+        {/* Intro */}
         <section className="flex min-h-[20vh] max-h-screen text-left items-center justify-center">
           <div className="space-y-2 md:w-1/4 p-5 space-y-4">
             <header className='text-3xl text-sub-purple'>Who we are</header>
@@ -48,20 +49,22 @@ export default function Home() {
           <p className="md:w-1/4 text-neutral-600 italic">Our goal is to be recognized as one of the best construction consultancy firms, providing world-class solutions that drive sustainable builds, boost productivity, and encourage innovation.</p>
         </section>
 
-
         {/* Services */}
-        <section className="min-h-[80vh] max-h-screen text-center bg-neutral-100">
-          <div className='h-[15vh] md:w-[40%] m-auto flex flex-col justify-center space-y-2'>
+        <section className="text-center bg-neutral-100 py-12">
+          <div className='w-full md:w-[40%] mx-auto flex flex-col justify-center space-y-4 px-8'>
             <header className='text-2xl text-sub-purple'>What We Do</header>
-            <p className='text-neutral-600 italic'>FEASIBILITY STUDIES | PRE-PLANNING ADVICE | ARCHITECTURE & INTERIOR DESIGN | OUTLINE AND FULL PLANNING APPLICATIONS | DESIGN AND BUILD | CONTRACT ADMINISTRATION | PROJECT MANAGEMENT | CONSTRUCTION MANAGEMENT</p>
+            <p className='text-neutral-600 italic text-sm sm:text-base'>
+              FEASIBILITY STUDIES | PRE-PLANNING ADVICE | ARCHITECTURE & INTERIOR DESIGN | OUTLINE AND FULL PLANNING APPLICATIONS | DESIGN AND BUILD | CONTRACT ADMINISTRATION | PROJECT MANAGEMENT | CONSTRUCTION MANAGEMENT
+            </p>
           </div>
 
-          <div className="md:max-w-screen-xl mx-auto px-4 py-8 space-y-8">
-            <div className="flex flex-col lg:flex-row items-stretch gap-x-6">
-              <div className="flex justify-start w-auto">
-                <img src="/Images/IMG-2.jpg" alt="Architecture" className="w-[300px] object-cover" />
+          <div className="max-w-screen-xl mx-auto px-4 py-15 space-y-16">
+            {/* Design */}
+            <div className="flex flex-col lg:flex-row items-center lg:items-start gap-6">
+              <div className="w-full lg:w-auto">
+                <img src="/Images/IMG-2.jpg" alt="Architecture" className="w-full max-w-xs mx-auto object-cover rounded" />
               </div>
-              <div className="flex-1 flex flex-col justify-center text-left">
+              <div className="flex-1 flex flex-col justify-center text-center lg:text-left">
                 <h3 className="text-2xl mb-2 text-sub-purple">Design</h3>
                 <p className='text-neutral-600 italic'>
                   Architecture is the cornerstone of Atelier Lavender’s design practice. We can design any building with an optimum spacing layout that fulfils clients' needs, with extraordinary results.
@@ -69,64 +72,103 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex flex-col-reverse lg:flex-row items-stretch gap-x-6">
-              <div className="flex-1 flex flex-col justify-center text-right">
+            {/* Project Management */}
+            <div className="flex flex-col-reverse lg:flex-row items-center lg:items-start gap-6">
+              <div className="flex-1 flex flex-col justify-center text-center lg:text-right">
                 <h3 className="text-2xl mb-2 text-sub-purple">Project Management</h3>
-                <p className='text-neutral-600 italic '>
+                <p className='text-neutral-600 italic'>
                   Atelier Lavender caters customized and holistic project management solutions that cover the entire life cycle of a project.
                 </p>
               </div>
-              <div className="flex justify-end w-auto">
-                <img src="/Images/IMG-5.jpg" alt="Service" className="w-[300px] object-cover" />
+              <div className="w-full lg:w-auto">
+                <img src="/Images/IMG-5.jpg" alt="Service" className="w-full max-w-xs mx-auto object-cover rounded" />
               </div>
             </div>
 
-            <div className="flex flex-col lg:flex-row items-stretch gap-x-6">
-              <div className="flex justify-start w-auto">
-                <img src="/Images/IMG-4.jpg" alt="Service" className="w-[300px] object-cover" />
+            {/* Site Supervision */}
+            <div className="flex flex-col lg:flex-row items-center lg:items-start gap-6">
+              <div className="w-full lg:w-auto">
+                <img src="/Images/IMG-4.jpg" alt="Service" className="w-full max-w-xs mx-auto object-cover rounded" />
               </div>
-              <div className="flex-1 flex flex-col justify-center text-left">
+              <div className="flex-1 flex flex-col justify-center text-center lg:text-left">
                 <h3 className="text-2xl mb-2 text-sub-purple">Site Supervision</h3>
-                <p className='text-neutral-600 italic '>
+                <p className='text-neutral-600 italic'>
                   We assist clients in preparing construction contracts and supervise their construction works on-site as per design documents, specifications and schedule.
                 </p>
               </div>
             </div>
           </div>
-
         </section>
-
 
         {/* About */}
-        <section className='flex min-h-[20vh] max-h-screen'>
-          <div className='flex flex-col text-left items-center justify-center space-y-3'>
+        <section className='flex w-full py-10'>
+          <div className='flex flex-col text-left items-center justify-center space-y-3 w-full'>
             <h3 className='text-2xl text-sub-purple'>About Director</h3>
-            <p className='md:w-[40%] text-sm text-neutral-600 italic '>Mrs. Meltem Ustay is a highly-skilled professional with more than 30 years of design and construction management experience. She has successfully delivered the development and design projects in the Gulf Cooperation Council (GCC) and Turkey with world-class investment, development, contracting and consulting companies. As an architect, consultant & client representative, her construction exposure ranges from individual buildings & factories to mega structures & complex projects. Her education in the field of architecture and extensive experience in the same industry are the key strengths of Lavender Ltd to develop and excel in the UK’s construction market.</p>
-          </div>
-
-        </section>
-
-
-        {/* Contact */}
-        <section className='flex text-center h-[30vh] bg-neutral-200'>
-          <div className='flex flex-1 flex-col justify-center items-center'>
-            <h2 className="text-2xl mb-3 text-sub-purple">Contact Us</h2>
-            <p className="max-w-2xl mx-auto mb-8 text-neutral-600 italic ">
-              If you wish to contact us you can do so via the email provided.
+            <p className='md:w-[40%] text-sm text-neutral-600 italic px-4 text-center'>
+              Mrs. Meltem Ustay is a highly-skilled professional with more than 30 years of design and construction management experience. She has successfully delivered the development and design projects in the Gulf Cooperation Council (GCC) and Turkey with world-class investment, development, contracting and consulting companies. As an architect, consultant & client representative, her construction exposure ranges from individual buildings & factories to mega structures & complex projects. Her education in the field of architecture and extensive experience in the same industry are the key strengths of Lavender Ltd to develop and excel in the UK’s construction market.
             </p>
-            <div className='flex justify-center gap-3'>
-              <a href="mailto:jackkeirnan@gmail.com" className="btn w-[8rem] h-[3rem] flex justify-center items-center text-neutral-600 italic bg-sub-purple">Email</a>
+
+            {/* Images */}
+            <div className='flex flex-col md:flex-row justify-center items-center gap-4 mt-4 pb-6 px-4'>
+              <img src='/Images/IMG-6.jpg' alt='Image 1' className='w-80 h-60 object-cover rounded' />
+              <img src='/Images/APA-IMG.jpg' alt='Image 2' className='w-80 h-60 object-cover rounded' />
+              <img src='/Images/IMG-8.jpg' alt='Image 3' className='w-80 h-60 object-cover rounded' />
             </div>
           </div>
+        </section>
 
+        {/* Contact */}
+        <section className="bg-neutral-200 py-8">
+          <div className="max-w-6xl mx-auto px-4">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-10">
+              
+              <div className="flex-1 bg-white p-6 rounded shadow-md w-full max-w-xl">
+                <h1 className="text-2xl text-sub-purple text-center">Contact us</h1>
+                <form className="mt-8 space-y-5">
+                  <div>
+                    <label className='text-sm text-sub-purple font-medium mb-2 block'>Name</label>
+                    <input type='text' placeholder='Enter Name'
+                      className="w-full py-2.5 px-4 text-neutral-600 bg-gray-100 border border-gray-200 focus:border-slate-900 focus:bg-transparent text-sm outline-0 transition-all" />
+                  </div>
+                  <div>
+                    <label className='text-sm text-sub-purple font-medium mb-2 block'>Email</label>
+                    <input type='email' placeholder='Enter Email'
+                      className="w-full py-2.5 px-4 text-neutral-600 bg-gray-100 border border-gray-200 focus:border-slate-900 focus:bg-transparent text-sm outline-0 transition-all" />
+                  </div>
+                  <div>
+                    <label className='text-sm text-sub-purple font-medium mb-2 block'>Subject</label>
+                    <input type='text' placeholder='Enter Subject'
+                      className="w-full py-2.5 px-4 text-neutral-600 bg-gray-100 border border-gray-200 focus:border-slate-900 focus:bg-transparent text-sm outline-0 transition-all" />
+                  </div>
+                  <div>
+                    <label className='text-sm text-sub-purple font-medium mb-2 block'>Message</label>
+                    <textarea placeholder='Enter Message' rows={4}
+                      className="w-full px-4 text-neutral-600 bg-gray-100 border border-gray-200 focus:border-slate-900 focus:bg-transparent text-sm pt-3 outline-0 transition-all"></textarea>
+                  </div>
+                  <button type='button'
+                    className="!mt-8 text-white bg-neutral-600 hover:bg-sub-purple tracking-wide text-[15px] px-4 py-2 w-full outline-0 cursor-pointer">Send</button>
+                </form>
+              </div>
+
+              <div className="hidden md:block flex-1">
+                <img 
+                  src="/Images/IMG-3.webp" 
+                  alt="Contact illustration" 
+                  className="w-full h-auto object-cover rounded"
+                />
+              </div>
+
+            </div>
+          </div>
         </section>
 
         {/* Footer */}
         <section className='text-center bg-sub-purple'>
           <footer className="py-6 text-center text-gray-600">
-            <p>&copy; 2025 Jack Keirnan. Built with NextJS and Tailwind, hosted by Vercel. Uses DaisyUI for some components.</p>
+            <p>&copy; 2025 Atelier Lavender. Website built with NextJS and Tailwind, hosted by Vercel.</p>
           </footer>
         </section>
+
 
       </div>
     </>
