@@ -14,17 +14,17 @@ export default function Home() {
       <div className="min-h-screen bg-white text-black">
 
         {/* Header/Banner */}
-        <section className="relative h-[30vh] w-full overflow-hidden">
+        <section className="relative h-[80vh] w-full overflow-hidden">
           <img
             src="/Images/Banner.png"
             alt="Banner"
-            className="w-full h-full object-cover brightness-75"
+            className="w-full h-full object-cover brightness-60"
           />
 
             <img
               src="/Images/atelier.png" // replace with your image path
               alt="Atelier Logo"
-              className="absolute top-1 left-1 w-24 h-24 object-contain z-10"
+              className="absolute top-2 left-5 w-40 h-40 object-contain z-10"
             />
             
             <header className="absolute inset-0 flex justify-center items-center text-white text-xl text-center px-4">
@@ -34,6 +34,7 @@ export default function Home() {
               </div>
             </header>
         </section>
+
 
         {/* Intro */}
         <section className="flex min-h-[20vh] max-h-screen text-left items-center justify-center">
@@ -118,10 +119,9 @@ export default function Home() {
         </section>
 
         {/* Contact */}
-        <section className="bg-neutral-200 py-8">
+        <section className="bg-neutral-300 py-8 ">
           <div className="max-w-6xl mx-auto px-4">
             <div className="flex flex-col md:flex-row items-center justify-center gap-10">
-              
               <div className="flex-1 bg-white p-6 rounded shadow-md w-full max-w-xl">
                 <h1 className="text-2xl text-sub-purple text-center">Contact us</h1>
                 <form className="mt-8 space-y-5">
@@ -164,7 +164,7 @@ export default function Home() {
 
         {/* Footer */}
         <section className='text-center bg-sub-purple'>
-          <footer className="py-6 text-center text-gray-600">
+          <footer className="py-6 text-center text-gray-500">
             <p>&copy; 2025 Atelier Lavender. Website built with NextJS and Tailwind, hosted by Vercel.</p>
           </footer>
         </section>
