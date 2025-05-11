@@ -118,42 +118,46 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Contact */}
-        <section className="bg-neutral-300 py-8 ">
+        <section className="bg-neutral-300 py-8">
           <div className="max-w-6xl mx-auto px-4">
             <div className="flex flex-col md:flex-row items-center justify-center gap-10">
-              <div className="flex-1 bg-white p-6 rounded shadow-md w-full max-w-xl">
-                <h1 className="text-2xl text-sub-purple text-center">Contact us</h1>
-                <form className="mt-8 space-y-5">
-                  <div>
-                    <label className='text-sm text-sub-purple font-medium mb-2 block'>Name</label>
-                    <input type='text' placeholder='Enter Name'
-                      className="w-full py-2.5 px-4 text-neutral-600 bg-gray-100 border border-gray-200 focus:border-slate-900 focus:bg-transparent text-sm outline-0 transition-all" />
-                  </div>
-                  <div>
-                    <label className='text-sm text-sub-purple font-medium mb-2 block'>Email</label>
-                    <input type='email' placeholder='Enter Email'
-                      className="w-full py-2.5 px-4 text-neutral-600 bg-gray-100 border border-gray-200 focus:border-slate-900 focus:bg-transparent text-sm outline-0 transition-all" />
-                  </div>
-                  <div>
-                    <label className='text-sm text-sub-purple font-medium mb-2 block'>Subject</label>
-                    <input type='text' placeholder='Enter Subject'
-                      className="w-full py-2.5 px-4 text-neutral-600 bg-gray-100 border border-gray-200 focus:border-slate-900 focus:bg-transparent text-sm outline-0 transition-all" />
-                  </div>
-                  <div>
-                    <label className='text-sm text-sub-purple font-medium mb-2 block'>Message</label>
-                    <textarea placeholder='Enter Message' rows={4}
-                      className="w-full px-4 text-neutral-600 bg-gray-100 border border-gray-200 focus:border-slate-900 focus:bg-transparent text-sm pt-3 outline-0 transition-all"></textarea>
-                  </div>
-                  <button type='button'
-                    className="!mt-8 text-white bg-neutral-600 hover:bg-sub-purple tracking-wide text-[15px] px-4 py-2 w-full outline-0 cursor-pointer">Send</button>
-                </form>
+
+              {/* Left Card with Text & Links */}
+              <div className="flex-1 bg-white p-6 rounded shadow-md w-full max-w-xl text-center">
+                <h1 className="text-2xl text-sub-purple mb-4">Get in Touch</h1>
+                <p className="text-neutral-600 italic mb-6">
+                  We'd love to hear from you! Reach out to us directly using the contact info below.
+                </p>
+
+                <div className="space-y-4">
+                  <p className="text-sm text-neutral-600">
+                    📞 Phone:{" "}
+                    <a href="tel:+447493802246" className="text-sub-purple hover:underline">
+                      +44 7493 802246
+                    </a>
+                  </p>
+
+                  <p className="text-sm text-neutral-600">
+                    📧 Email:{" "}
+                    <a href="mailto:Meltem@atelierlavender.co.uk" className="text-sub-purple hover:underline">
+                      Meltem@atelierlavender.co.uk
+                    </a>
+                  </p>
+
+                  <a
+                    href="mailto:Meltem@atelierlavender.co.uk"
+                    className="inline-block mt-6 text-white bg-sub-purple hover:bg-sub-purple/80 px-6 py-2 rounded transition-all"
+                  >
+                    Send an Email
+                  </a>
+                </div>
               </div>
 
+              {/* Right Side Image */}
               <div className="hidden md:block flex-1">
-                <img 
-                  src="/Images/IMG-3.webp" 
-                  alt="Contact illustration" 
+                <img
+                  src="/Images/IMG-3.webp"
+                  alt="Contact illustration"
                   className="w-full h-auto object-cover rounded"
                 />
               </div>
@@ -162,9 +166,10 @@ export default function Home() {
           </div>
         </section>
 
+
         {/* Footer */}
         <section className='text-center bg-sub-purple'>
-          <footer className="py-6 text-center text-gray-500">
+          <footer className="py-6 text-center text-neutral-600">
             <p>&copy; 2025 Atelier Lavender. Website built with NextJS and Tailwind, hosted by Vercel.</p>
           </footer>
         </section>
